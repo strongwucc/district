@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\DB;
 
 class DistrictController extends Controller
 {
+    /**
+     * 支付通知
+     * @param Request $request
+     */
     public function notify(Request $request)
     {
         $notifyData = $request->all();

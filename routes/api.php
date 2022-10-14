@@ -21,8 +21,8 @@ $api->version('v1', [
 ], function($api) {
 
     // 根据 openid 核销优惠券
-        $api->post('coupon/write_off', 'CouponsController@writeOff')
-            ->name('api.coupons.write_off');
+    $api->post('coupon/write_off', 'CouponsController@writeOff')
+        ->name('api.coupons.write_off');
 
     $api->group([
         'middleware' => 'api.throttle',
